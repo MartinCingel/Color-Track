@@ -1,0 +1,24 @@
+# Color Track - Python dependencies
+# Install with: pip install -r requirements.txt
+# CuPy must be installed separately to match your CUDA version (see README)
+
+PyQt6>=6.5.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Optional NVIDIA-only CuPy acceleration. Point Fast and native D3D11
+# decoding run without CuPy, including on AMD/Intel Windows systems.
+# Install the version matching your CUDA toolkit only when using legacy
+# CUDA tracker modes or NVIDIA-specific acceleration:
+#   CUDA 12.x:  pip install cupy-cuda12x
+#   CUDA 11.x:  pip install cupy-cuda11x
+#   CUDA 10.2:  pip install cupy-cuda102
+# Do NOT install the generic 'cupy' package — it won't use CUDA.
+
+
+# Optional preferred hardware decoder for prepared analysis workspace caches:
+# Install on an NVIDIA NVDEC-capable system to enable GPU decoding:
+#   pip install PyNvVideoCodec
+# Without this package the application visibly falls back to OpenCV/FFmpeg CPU decoding.
+openpyxl>=3.1.0

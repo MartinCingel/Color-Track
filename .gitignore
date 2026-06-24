@@ -1,0 +1,23 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build and release output
+build/
+dist/
+release/
+*.spec
+*.obj
+
+# Per-user settings, caches, profiles, and diagnostics
+analysis_cache/
+tracking_profiles/
+debug_reports/
+user_settings/
+tests/appdata_probe*/
+
+# Generated native runtime and downloaded FFmpeg source
+native/bin/
+native/third_party/
