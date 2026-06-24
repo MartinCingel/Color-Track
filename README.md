@@ -45,14 +45,17 @@ hardware-accelerated video decoding through NVIDIA, AMD, or Intel graphics.
 ## Basic Workflow
 
 1. Open a video.
-2. Choose Normal or Tiny Feature mode and set the approximate feature size.
-3. Click the marker to initialise a tracker. Hold `Shift` and left-click to
+2. Optionally select a workspace to limit tracking and decoding to the relevant
+   part of the frame. Leave the full frame selected when the marker may travel
+   outside a crop.
+3. Choose Normal or Tiny Feature mode and set the approximate feature size.
+4. Click the marker to initialise a tracker. Hold `Shift` and left-click to
    add another tracker quickly.
-4. Use the Active list for trackers to include in the next batch; move
+5. Use the Active list for trackers to include in the next batch; move
    prepared trackers to the Queue when they should not run yet.
-5. Set the video range and optional tracker end frame, then run the batch.
-6. Review uncertain frames or reinitialise a lost tracker when appropriate.
-7. Export results from the Export section or File menu.
+6. Set the video range and optional tracker end frame, then run the batch.
+7. Review uncertain frames or reinitialise a lost tracker when appropriate.
+8. Export results from the Export section or File menu.
 
 `Space` toggles playback. The timeline controls the displayed frame and batch
 range.
