@@ -60,6 +60,37 @@ hardware-accelerated video decoding through NVIDIA, AMD, or Intel graphics.
 `Space` toggles playback. The timeline controls the displayed frame and batch
 range.
 
+## Controls
+
+### Main Window and Video Canvas
+
+| Input | Action |
+| --- | --- |
+| `Ctrl+O` | Open a video. |
+| `Ctrl+S` | Export NPZ results. |
+| `Ctrl+Q` | Quit. |
+| `Space` | Play or pause the video. |
+| `Q` / `E` | Previous / next frame when the video canvas has focus. |
+| `W` `A` `S` `D` | Pan the zoomed video canvas. |
+| `R` | Reset the video canvas view. |
+| Mouse wheel | Zoom around the cursor. |
+| Left click | Seed the currently pending tracker, or choose a point in an active calibration mode. |
+| `Shift` + left click | Quickly create and seed a point tracker. The feature-size guide is visible while holding `Shift`. |
+| Left drag | Select a workspace when workspace selection is active. |
+
+### Uncertain-Frame Review
+
+| Input | Action |
+| --- | --- |
+| `Q` / `Up` | Select the previous uncertain frame. |
+| `E` / `Down` | Select the next uncertain frame. |
+| `Left` / `Right` | Choose a proposed correction action. |
+| `Enter` | Apply the selected correction. |
+| `W` `A` `S` `D` | Pan the review image. |
+| Mouse wheel | Zoom around the cursor. |
+| `F` | Fit the review image to the panel. |
+| `1` | Show the review image at 100% zoom. |
+
 ## Decoder Choices
 
 The decoder selector lets you choose the preferred path for the current video.
